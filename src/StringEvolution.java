@@ -1,11 +1,16 @@
 import java.util.Random;
 import java.util.Scanner;
 
+/*
+A program that takes an input string, creates a random-character string of the same length, then proceeds to "evolve" the random
+string back to the original input string.
+*/
+
 public class StringEvolution {
     public static void main(String[] args) {
         System.out.print("Enter a target string: ");
         Scanner input = new Scanner(System.in);
-        String targetString = input.nextLine();
+        String targetString = input.nextLine().lower();
 
         char[] alphabet = {
                 'a', 'b', 'c', 'd', 'e', 'f', 'g',
