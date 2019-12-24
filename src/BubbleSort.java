@@ -6,7 +6,7 @@ An implementation of bubble sort in Java.
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] array = {5, 1, 3, 5, 1, 4, 5, 1}; // Input array.
+        int[] array = {5, 1, 3, 5, 1, 4, 5, 1, 234234, 2873423, 0}; // Input array.
 
         boolean sorted = false;
 
@@ -14,7 +14,7 @@ public class BubbleSort {
             printArray(array);
 
             sorted = true; // Assume the array is sorted.
-            for (int i = 0; i < array.length - 2; i++) { // Iterate through the entire array.
+            for (int i = 0; i < array.length - 1; i++) { // Iterate through the entire array.
                 if (array[i] > array[i + 1]) { // If the current value is less than the next value,
                     int tempValue = array[i];  // Set a temporary value equal to the current one.
                     array[i] = array[i + 1];   // Set the current value to the next value.
@@ -27,8 +27,8 @@ public class BubbleSort {
     }
 
     public static void printArray(int[] arr) { // Print an integer array.
-        for (int i = 0; i < arr.length - 1; i++) {
-            System.out.print(arr[i]);
+        for (int value : arr) {
+            System.out.print(value);
             System.out.print(' ');
         }
 
