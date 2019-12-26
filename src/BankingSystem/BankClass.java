@@ -3,6 +3,12 @@ package BankingSystem;
 import java.util.HashMap;
 import java.util.ArrayList;
 
+/*
+
+Playing with classes. Here's a nice little banking system with simple encryption.
+
+*/
+
 public class BankClass implements BankClassInterface {
     private int encryptionShift = 2;
     HashMap<ArrayList<String>, Double> accounts = new HashMap<ArrayList<String>, Double>();
