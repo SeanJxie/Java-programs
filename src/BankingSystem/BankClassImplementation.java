@@ -16,5 +16,13 @@ public class BankClassImplementation {
 
         bankingSystem.showAccount("Sean", "password");
 
+        bankingSystem.withdraw("Sean", "password", 5);
+
+        bankingSystem.showAccount("Sean", "password");
+
+        bankingSystem.deleteAccount("Sean", "password");
+
+
+
     }
 }

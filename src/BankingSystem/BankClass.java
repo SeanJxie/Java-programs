@@ -80,7 +80,7 @@ public class BankClass implements BankClassInterface {
         account.add(accountID);
         account.add(encrypt(password, encryptionShift));
 
-        double newBalance = accounts.get(account) + amount;
+        double newBalance = accounts.get(account) - amount;
 
         if (!accounts.containsKey(account)) {
             throw new IllegalArgumentException("Account does not exist.");
